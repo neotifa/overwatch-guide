@@ -1,4 +1,30 @@
 Rails.application.routes.draw do
+
+  # Maps
+  get 'maps/Anubis'
+  get 'maps/BlizzardWorld'
+  get 'maps/Busan'
+  get 'maps/BusanStadium'
+  get 'maps/Dorado'
+  get 'maps/Eichenwalde'
+  get 'maps/Gibraltar'
+  get 'maps/Hanamura'
+  get 'maps/Hollywood'
+  get 'maps/Horizon'
+  get 'maps/Ilios'
+  get 'maps/Junkertown'
+  get 'maps/KingsRow'
+  get 'maps/Lijiang'
+  get 'maps/Nepal'
+  get 'maps/Numbani'
+  get 'maps/Oasis'
+  get 'maps/Rialto'
+  get 'maps/RioDeJaneiro'
+  get 'maps/Route66'
+  get 'maps/SydneyHarbor'
+  get 'maps/Volskaya'
+
+  # Heroes
   get 'heroes/Ana'
   get 'heroes/Bastion'
   get 'heroes/Brigitte'
@@ -6,6 +32,7 @@ Rails.application.routes.draw do
   get 'heroes/Doomfist'
   get 'heroes/Genji'
   get 'heroes/Hanzo'
+  get 'heroes/Jjonak'
   get 'heroes/Junkrat'
   get 'heroes/Lucio'
   get 'heroes/McCree'

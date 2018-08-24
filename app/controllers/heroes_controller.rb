@@ -23,6 +23,9 @@ class HeroesController < ApplicationController
   def Junkrat
   end
 
+  def Jjonak
+  end
+
   def Lucio
   end
 
