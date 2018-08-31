@@ -1,4 +1,7 @@
 class MapsController < ApplicationController
+  def Antarctica
+  end
+
   def Anubis
   end
 

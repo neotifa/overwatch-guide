@@ -1,6 +1,12 @@
 Rails.application.routes.draw do
 
+  get 'static_pages/home'
+  get 'static_pages/help'
+  get 'static_pages/contact'
+  get 'static_pages/about'
+
   # Maps
+  get 'maps/Antarctica'
   get 'maps/Anubis'
   get 'maps/BlizzardWorld'
   get 'maps/Busan'
@@ -55,5 +61,5 @@ Rails.application.routes.draw do
   get 'heroes/Zenyatta'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 
-  root 'application#hello'
+  root 'static_pages#home'
 end
