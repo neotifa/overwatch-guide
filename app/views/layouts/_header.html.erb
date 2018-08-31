@@ -1,67 +1,76 @@
 <header class="navbar navbar-fixed-top navbar-inverse">
-  <div class="container">
-    <ul id="menu">
-      <li><%= link_to 'Home',   '#' %></li>
-      <li><%= link_to 'Help',   '#' %></li>
-      <li><%= link_to 'Log in', '#' %></li>
-      <li>Heroes
-        <ul>
-          <li><%= link_to 'Ana',   '#' %></li>
-          <li><%= link_to 'Bastion',   '#' %></li>
-          <li><%= link_to 'Brigitte',   '#' %></li>
-          <li><%= link_to 'Doomfist',   '#' %></li>
-          <li><%= link_to 'D.Va',   '#' %></li>
-          <li><%= link_to 'Genji',   '#' %></li>
-          <li><%= link_to 'Hanzo',   '#' %></li>
-          <li><%= link_to 'Junkrat',   '#' %></li>
-          <li><%= link_to 'Lucio',   '#' %></li>
-          <li><%= link_to 'McCree',   '#' %></li>
-          <li><%= link_to 'Mei',   '#' %></li>
-          <li><%= link_to 'Mercy',   '#' %></li>
-          <li><%= link_to 'Moira',   '#' %></li>
-          <li><%= link_to 'Orisa',   '#' %></li>
-          <li><%= link_to 'Pharah',   '#' %></li>
-          <li><%= link_to 'Reaper',   '#' %></li>
-          <li><%= link_to 'Reinhardt',   '#' %></li>
-          <li><%= link_to 'Roadhog',   '#' %></li>
-          <li><%= link_to 'Soldier: 76',   '#' %></li>
-          <li><%= link_to 'Sombra',   '#' %></li>
-          <li><%= link_to 'Symmetra',   '#' %></li>
-          <li><%= link_to 'Torbjorn',   '#' %></li>
-          <li><%= link_to 'Tracer',   '#' %></li>
-          <li><%= link_to 'Widowmaker',   '#' %></li>
-          <li><%= link_to 'Winston',   '#' %></li>
-          <li><%= link_to 'Zarya',   '#' %></li>
-          <li><%= link_to 'Zenyatta',   '#' %></li>
-        </ul>
-      </li>
-      <li>Maps
-        <ul>
-          <li><%= link_to 'Antarctica',   '#' %></li>
-          <li><%= link_to 'Anubis',   '#' %></li>
-          <li><%= link_to 'Blizzard World',   '#' %></li>
-          <li><%= link_to 'Busan',   '#' %></li>
-          <li><%= link_to 'Busan Stadium',   '#' %></li>
-          <li><%= link_to 'Dorado',   '#' %></li>
-          <li><%= link_to 'Eichenwalde',   '#' %></li>
-          <li><%= link_to 'Gibralter',   '#' %></li>
-          <li><%= link_to 'Hanamura',   '#' %></li>
-          <li><%= link_to 'Hollywood',   '#' %></li>
-          <li><%= link_to 'Horizon',   '#' %></li>
-          <li><%= link_to 'Ilios',   '#' %></li>
-          <li><%= link_to 'Junkertown',   '#' %></li>
-          <li><%= link_to 'Kings Row',   '#' %></li>
-          <li><%= link_to 'Lijiang',   '#' %></li>
-          <li><%= link_to 'Nepal',   '#' %></li>
-          <li><%= link_to 'Numbani',   '#' %></li>
-          <li><%= link_to 'Oasis',   '#' %></li>
-          <li><%= link_to 'Rialto',   '#' %></li>
-          <li><%= link_to 'Rio De Janeiro',   '#' %></li>
-          <li><%= link_to 'Route 66',   '#' %></li>
-          <li><%= link_to 'Syndey Harbor Stadium',   '#' %></li>
-          <li><%= link_to 'Volskaya',   '#' %></li>
-        </ul>
-      </li>
-    </ul>
+  <div>
+    <nav id="menu" class="navbar navbar-expand-sm bg-dark navbar-dark">
+      <ul  class="navbar-nav">
+        <li class="nav-item"><%= link_to 'Home | ',   '#' %></li>
+        <li class="nav-item"><%= link_to 'Help | ',   '#' %></li>
+
+        <li class="nav-item dropdown">
+            <a class="dropdown-toggle nav-link" data-toggle="dropdown">
+              Heroes |
+            </a>
+            <div class="dropdown-menu">
+              <%= link_to 'Ana',   '#', class: 'dropdown-item' %>
+              <%= link_to 'Bastion',   '#', class: 'dropdown-item' %>
+              <%= link_to 'Brigitte',   '#', class: 'dropdown-item' %>
+              <%= link_to 'Doomfist',   '#', class: 'dropdown-item' %>
+              <%= link_to 'D.Va',   '#', class: 'dropdown-item' %>
+              <%= link_to 'Genji',   '#', class: 'dropdown-item' %>
+              <%= link_to 'Hanzo',   '#', class: 'dropdown-item' %>
+              <%= link_to 'Junkrat',   '#', class: 'dropdown-item' %>
+              <%= link_to 'Lucio',   '#', class: 'dropdown-item' %>
+              <%= link_to 'McCree',   '#', class: 'dropdown-item' %>
+              <%= link_to 'Mei',   '#', class: 'dropdown-item' %>
+              <%= link_to 'Mercy',   '#', class: 'dropdown-item' %>
+              <%= link_to 'Moira',   '#', class: 'dropdown-item' %>
+              <%= link_to 'Orisa',   '#', class: 'dropdown-item' %>
+              <%= link_to 'Pharah',   '#', class: 'dropdown-item' %>
+              <%= link_to 'Reaper',   '#', class: 'dropdown-item' %>
+              <%= link_to 'Reinhardt',   '#', class: 'dropdown-item' %>
+              <%= link_to 'Roadhog',   '#', class: 'dropdown-item' %>
+              <%= link_to 'Soldier: 76',   '#', class: 'dropdown-item' %>
+              <%= link_to 'Sombra',   '#', class: 'dropdown-item' %>
+              <%= link_to 'Symmetra',   '#', class: 'dropdown-item' %>
+              <%= link_to 'Torbjorn',   '#', class: 'dropdown-item' %>
+              <%= link_to 'Tracer',   '#', class: 'dropdown-item' %>
+              <%= link_to 'Widowmaker',   '#', class: 'dropdown-item' %>
+              <%= link_to 'Winston',   '#', class: 'dropdown-item' %>
+              <%= link_to 'Zarya',   '#', class: 'dropdown-item' %>
+              <%= link_to 'Zenyatta',   '#', class: 'dropdown-item' %>
+            </div>
+        </li>
+
+        <li class="nav-item dropdown">
+            <a class="dropdown-toggle nav-link" data-toggle="dropdown">
+              Maps |
+            </a>
+          <div class="dropdown-menu">
+            <%= link_to 'Antarctica',   '#', class: 'dropdown-item' %>
+            <%= link_to 'Anubis',   '#', class: 'dropdown-item' %>
+            <%= link_to 'Blizzard World',   '#', class: 'dropdown-item' %>
+            <%= link_to 'Busan',   '#', class: 'dropdown-item' %>
+            <%= link_to 'Busan Stadium',   '#', class: 'dropdown-item' %>
+            <%= link_to 'Dorado',   '#', class: 'dropdown-item' %>
+            <%= link_to 'Eichenwalde',   '#', class: 'dropdown-item' %>
+            <%= link_to 'Gibralter',   '#', class: 'dropdown-item' %>
+            <%= link_to 'Hanamura',   '#', class: 'dropdown-item' %>
+            <%= link_to 'Hollywood',   '#', class: 'dropdown-item' %>
+            <%= link_to 'Horizon',   '#', class: 'dropdown-item' %>
+            <%= link_to 'Ilios',   '#', class: 'dropdown-item' %>
+            <%= link_to 'Junkertown',   '#', class: 'dropdown-item' %>
+            <%= link_to 'Kings Row',   '#', class: 'dropdown-item' %>
+            <%= link_to 'Lijiang',   '#', class: 'dropdown-item' %>
+            <%= link_to 'Nepal',   '#', class: 'dropdown-item' %>
+            <%= link_to 'Numbani',   '#', class: 'dropdown-item' %>
+            <%= link_to 'Oasis',   '#', class: 'dropdown-item' %>
+            <%= link_to 'Rialto',   '#', class: 'dropdown-item' %>
+            <%= link_to 'Rio De Janeiro',   '#', class: 'dropdown-item' %>
+            <%= link_to 'Route 66',   '#', class: 'dropdown-item' %>
+            <%= link_to 'Syndey Harbor Stadium',   '#', class: 'dropdown-item' %>
+            <%= link_to 'Volskaya',   '#', class: 'dropdown-item' %>
+          </div>
+        </li>
+      </ul>
+    </nav>
   </div>
 </header>
